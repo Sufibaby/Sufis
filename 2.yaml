@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: kuz001
+  name: kuz001
+  namespace: production
+spec:
+  containers:
+  - image: nginx
+    name: kuz001
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
